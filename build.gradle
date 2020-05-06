@@ -30,6 +30,10 @@ plugins {
     id 'eclipse-wtp'
 }
 
+war {
+    archiveName 'NodeTECH.war'
+}
+
 mainClassName = "com.nodetech.web.MyServlet"
 
 repositories {
