@@ -1,0 +1,47 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "war",
+      "type": "shell",
+      "command": "gradle war"
+    },
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "gradle build"
+    },
+    {
+      "label": "run",
+      "type": "shell",
+      "command": "gradle run"
+    },
+    {
+      "label": "-q run",
+      "type": "shell",
+      "command": "gradle -q run"
+    },
+    {
+      "label": "eclipse",
+      "type": "shell",
+      "command": "gradle eclipse"
+    },
+    {
+      "label": "eclipseWtpComponent",
+      "type": "shell",
+      "command": "gradle eclipseWtpComponent"
+    },
+    {
+      "label": "eclipseWtpFacet",
+      "type": "shell",
+      "command": "gradle eclipseWtpFacet"
+    },
+    {
+      "label": "test",
+      "type": "shell",
+      "command": "gradle test"
+    }
+  ]
+}
