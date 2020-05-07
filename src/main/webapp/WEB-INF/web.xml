@@ -3,9 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 	version="3.1">
-
 	<display-name>Web Application</display-name>
-
 	<servlet>
 		<servlet-name>serv</servlet-name>
 		<servlet-class>com.nodetech.web.MyServlet</servlet-class>
@@ -13,5 +11,13 @@
 	<servlet-mapping>
 		<servlet-name>serv</servlet-name>
 		<url-pattern>/serv/xxx</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>info.searchman.lesson.jsp_servlet.LoginServlet</servlet-class>
+  </servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/Login</url-pattern>
 	</servlet-mapping>
 </web-app>
