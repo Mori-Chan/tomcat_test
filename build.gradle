@@ -9,15 +9,27 @@
 // apply plugin: 'java-library'
 // apply plugin: 'war'
 // apply plugin: 'application'
-// apply plugin: 'org.akhikhl.gretty'
 // apply plugin: 'eclipse'
+// apply plugin: 'org.springframework.boot'
 
+// apply plugin: 'org.akhikhl.gretty'
 // buildscript {
 // 	repositories {
 // 		mavenCentral()
 // 	}
 // 	dependencies {
 // 		classpath group:'org.akhikhl.gretty', name:'gretty', version:'+'
+// 	}
+// }
+
+// buildscript {
+// 	repositories {
+// 		jcenter()
+// 		maven { url "http://repo.spring.io/snapshot" }
+// 		maven { url "http://repo.spring.io/milestone" }
+// 	}
+// 	dependencies {
+// 		classpath group:"org.springframework.boot", name:"spring-boot-gradle-plugin", version:"+"
 // 	}
 // }
 
@@ -31,7 +43,7 @@ plugins {
 }
 
 war {
-    archiveName 'NodeTECH.war'
+    archiveName = 'NodeTECH.war'
 }
 
 mainClassName = "com.nodetech.web.MyServlet"
@@ -40,6 +52,8 @@ repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
+    // maven { url "http://repo.spring.io/snapshot" }
+	// maven { url "http://repo.spring.io/milestone" }
 }
 
 dependencies {
@@ -55,6 +69,12 @@ dependencies {
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
 }
+
+//文字化け対策
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
 
 // task hello {
 // 	doLast {
@@ -92,8 +112,3 @@ dependencies {
 // 		println("*** do it! ***")
 // 	}
 // }
-
-//文字化け対策
-tasks.withType(JavaCompile) {
-    options.encoding = "UTF-8"
-}
