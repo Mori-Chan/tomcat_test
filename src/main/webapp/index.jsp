@@ -1,4 +1,4 @@
-
+<%@ page language="java" contentType="text/html;charset=utf-8"%>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -6,7 +6,17 @@
 		<title>Sample Index</title>
 	</head>
 	<body>
-		<h1>Hello World!</h1>
-		<%= new java.util.Date().toString() %>
+			<%
+					String mongon = "ＩＤとパスワードを入力してください。";
+				%>
+
+			<%=mongon%><br>
+			<br>
+
+			<form action="index2.jsp" method="POST">
+				ＩＤ: <input type="text" name="id"> パスワード: <input type="text" name="pass">
+				<br><br>
+				<input type="submit" value="submit">
+			</form>
 	</body>
 </html>
