@@ -3,7 +3,8 @@
 <html>
 
 <head>
-	<title></title>
+	<meta charset="UTF-8">
+	<title>Sample Index2</title>
 </head>
 
 <body>
