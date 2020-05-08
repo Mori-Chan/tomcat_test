@@ -14,7 +14,7 @@
 	</servlet-mapping>
 	<servlet>
 		<servlet-name>LoginServlet</servlet-name>
-		<servlet-class>info.searchman.lesson.jsp_servlet.LoginServlet</servlet-class>
+		<servlet-class>com.nodetech.web.LoginServlet</servlet-class>
   </servlet>
 	<servlet-mapping>
 		<servlet-name>LoginServlet</servlet-name>
