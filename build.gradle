@@ -46,7 +46,7 @@ war {
     archiveName = 'NodeTECH.war'
 }
 
-mainClassName = "com.nodetech.web.MyServlet"
+mainClassName = "com.nodetech.web.LoginServlet"
 
 repositories {
     // Use jcenter for resolving dependencies.

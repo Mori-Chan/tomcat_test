@@ -23,7 +23,7 @@ public class LoginServlet extends HttpServlet {
 		String status = "ログイン失敗"; // ログインステータス
 
 		// 文字コードの初期設定
-		request.setCharacterEncoding("Windows-31J");
+		request.setCharacterEncoding("UTF-8");
 
 		// IDの取得
 		String id = request.getParameter("id");
@@ -38,7 +38,7 @@ public class LoginServlet extends HttpServlet {
 		}
 
 		// サーブレット自身で表示する
-		response.setContentType("text/html; charset=windows-31J");
+		response.setContentType("text/html; charset=UTF-8");
 		PrintWriter out = response.getWriter();
 		out.println("<html>");
 		out.println("<head>");
