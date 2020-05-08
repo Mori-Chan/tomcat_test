@@ -11,7 +11,7 @@
 			%>
 			<%= mongon %><br>
 			<br>
-			<form action="/Loginservlet/Login" method="POST">
+			<form action="tomcat_test/login" method="POST">
 				ＩＤ: <input type="text" name="id"> パスワード: <input type="text" name="pass">
 				<br><br>
 				<input type="submit" value="submit">
