@@ -1,9 +1,8 @@
-<%@ page language="java" contentType="text/html;charset=utf-8"%>
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html;charset=UTF-8" %>
+
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Sample Logout</title>
+<title></title>
 </head>
 <body>
 <br>

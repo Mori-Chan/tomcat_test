@@ -1,20 +1,24 @@
-<%@ page language="java" contentType="text/html;charset=utf-8"%>
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html;charset=UTF-8" %>
+
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Sample Name</title>
-	</head>
-	<body>
-		<br>
-		<%
-		String message = (String)request.getAttribute( "login" );
-		String name = (String)request.getAttribute( "name" );
-		%>
-		<br><br>
-		<%= message %> <br><br>
-		����ɂ��́@<%= name %> ����<br><br>
-		<a href="/jsp_servlet/result.jsp">�O�̃y�[�W�ɖ߂�</a>
-		<br><br><br><br>
-	</body>
+<head>
+	<title></title>
+</head>
+<body>
+<br>
+
+<%
+String message = (String)request.getAttribute( "login" );
+String name = (String)request.getAttribute( "name" );
+%>
+
+<br><br>
+ <%= message %> <br><br>
+
+こんにちは　<%= name %> さん<br><br>
+
+<a href="/jsp_servlet/result.jsp">前のページに戻る</a>
+<br><br><br><br>
+
+</body>
 </html>

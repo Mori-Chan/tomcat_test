@@ -42,10 +42,6 @@ plugins {
     id 'eclipse-wtp'
 }
 
-war {
-    archiveName = 'NodeTECH.war'
-}
-
 mainClassName = "com.nodetech.web.LoginServlet"
 
 repositories {
@@ -70,10 +66,13 @@ dependencies {
     testImplementation 'junit:junit:4.12'
 }
 
+
+
 //文字化け対策
 tasks.withType(JavaCompile) {
     options.encoding = "UTF-8"
 }
+
 
 
 // task hello {
