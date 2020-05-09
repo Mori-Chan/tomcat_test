@@ -10,6 +10,10 @@
     </servlet>
 	<servlet-mapping>
 		<servlet-name>LoginServlet</servlet-name>
+<<<<<<< HEAD
 		<url-pattern>/Login</url-pattern>
+=======
+		<url-pattern>/LoginServlet/login</url-pattern>
+>>>>>>> 1e4e70d2dee51239ca368151210db6b3229b0ae3
 	</servlet-mapping>
 </web-app>
