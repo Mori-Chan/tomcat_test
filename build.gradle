@@ -48,8 +48,6 @@ repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
-
-       flatDir { dirs "libs" }
     // maven { url "http://repo.spring.io/snapshot" }
 	// maven { url "http://repo.spring.io/milestone" }
 }
@@ -66,11 +64,7 @@ dependencies {
 
     // compile group: 'org.lightsleep', name: 'lightsleep', version: '1.9.1', ext: 'pom'
 
-     compile files( 'libs/mysql-connector-java:8.0.20.jar')
-
-    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
-    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.20'            // MySQL
-
+     compile files( 'lib/mysql-connector-java:8.0.20.jar')
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
