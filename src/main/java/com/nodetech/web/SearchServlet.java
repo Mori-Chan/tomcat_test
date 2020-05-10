@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 public class SearchServlet extends HttpServlet {
 
 	/**
-	 * 
+	 *
 	 */
 	private static final long serialVersionUID = 1L;
 
@@ -44,8 +44,8 @@ public class SearchServlet extends HttpServlet {
 			// JDBC Driver の登録
 			Class.forName("com.mysql.jdbc.Driver");
 			// Connectionの作成
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/company_db?serverTimezone=UTC&useSSL=false", "Yuya",
-					"spass");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/company_db?serverTimezone=UTC&useSSL=false", "practice",
+					"practice");
 
 			// sql文作成の準備
 			StringBuffer sql = new StringBuffer();
