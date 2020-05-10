@@ -15,7 +15,7 @@ session.invalidate();
 <br><br>
 ログアウトしました<br><br>
 
-<a href="/jsp_servlet/result.jsp">前のページに戻る</a>
+<a href="/NodeTECH/result.jsp">前のページに戻る</a>
 <br><br><br><br>
 
 </body>

@@ -9,7 +9,7 @@
 
 <%
 String message = (String)request.getAttribute( "login" );
-String name = (String)request.getAttribute( "name" );
+String name = (String)session.getAttribute( "name" );
 %>
 
 <br><br>
@@ -17,8 +17,8 @@ String name = (String)request.getAttribute( "name" );
 
 こんにちは　<%= name %> さん<br><br>
 
-<a href="/jsp_servlet/result.jsp">前のページに戻る</a>
+<a href="/NodeTECH/result.jsp">前のページに戻る</a>
 <br><br><br><br>
-
+<a href="/NodeTECH/logout.jsp">ログアウト</a>
 </body>
 </html>

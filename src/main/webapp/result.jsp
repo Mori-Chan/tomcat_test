@@ -1,23 +1,23 @@
-<%@ page language="java" contentType="text/html;charset=UTF-8" %>
+<%@ page language="java" contentType="text/html;charset=Windows-31J"%>
 
 <html>
 <head>
-	<title></title>
+<title></title>
 </head>
 <body>
-<br>
+	<br>
 
-<%
-	String message = (String)request.getAttribute( "login" );
-	String name = (String)request.getAttribute( "name" );
-%>
+	<%
+		String status = (String) request.getAttribute("status");
+	%>
 
-<br><br>
- <%= message %> <br><br>
+	<br>
+	<br>
+	<%=status%>
+	<br>
+	<br>
 
-こんにちは　<%= name %> さん<br><br>
-
-<a href="/jsp_servlet/name.jsp">次のページに行く</a>
+	<a href="./index.jsp">�g�b�v�y�[�W�ɖ߂�</a>
 
 
 </body>
