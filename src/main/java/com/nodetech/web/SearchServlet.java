@@ -10,6 +10,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.sql.DataSource;
+import javax.naming.InitialContext;
 
 public class SearchServlet extends HttpServlet {
 
@@ -17,6 +19,21 @@ public class SearchServlet extends HttpServlet {
 	 *
 	 */
 	private static final long serialVersionUID = 1L;
+
+	//データソースの作成
+	DataSource ds;
+
+	// 初期化処理
+	public void init() throws ServletException {
+		try {
+			// 初期コンテキストを取得
+			InitialContext ic = new InitialContext();
+			// ルックアップしてデータソースを取得
+			ds = (DataSource) ic.lookup("java:comp/env/jdbc/nodetech");
+		} catch (Exception e) {
+
+		}
+	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -41,11 +58,15 @@ public class SearchServlet extends HttpServlet {
 		String nen = request.getParameter("nen");
 
 		try {
-			// JDBC Driver の登録
-			Class.forName("com.mysql.jdbc.Driver");
-			// Connectionの作成
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/company_db?serverTimezone=UTC&useSSL=false", "practice",
-					"practice");
+			// // JDBC Driver の登録
+			// Class.forName("com.mysql.jdbc.Driver");
+			// // Connectionの作成
+			// conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/company_db?serverTimezone=UTC&useSSL=false", "practice",
+			// 		"practice");
+
+			// データソースからConnectionを取得
+			conn = ds.getConnection();
+
 
 			// sql文作成の準備
 			StringBuffer sql = new StringBuffer();

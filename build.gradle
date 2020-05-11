@@ -70,8 +70,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
 }
 
-
-
 //文字化け対策
 tasks.withType(JavaCompile) {
     options.encoding = "UTF-8"
