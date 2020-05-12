@@ -14,6 +14,6 @@
 		<%=status%>
 		<br>
 		<br>
-		<a href="./index.jsp">�g�b�v�y�[�W�ɖ߂�</a>
+		<a href="./index.jsp">トップページに戻る</a>
 	</body>
 </html>
